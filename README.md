@@ -3,7 +3,7 @@
 Graph morphs are a method to visualize all behaviours attained from a complete graph of linear morphs between multiple Fashion Based Cellular Automata. This is done through visualizing a 2D convex cross sections centered at every FBCA, represented by a m-sided polgyon, m being the number of members in the morphed set minus 1. This has shown to be a very easy method to describe similar score matrices for FBCA with an arbtirary number of states and, with small edits, should be able to visualize a 'pseudo phase portrait' for FBCAs an arbitrary number of states.  
 
 # What
-To start, one must be familiar with (FBCA; described in Section 1.1 , Linear morphs; described in Section 3.1, Behaviours; described in Section 2.1 and Phase Portraits described in Section 3.3 of https://atrium.lib.uoguelph.ca/xmlui/handle/10214/21316). These are also defined in the following papers (and are slightly more easy to read): . The following example of what a graph morph is can best be used to explain the work done.
+To start, one must be familiar with (FBCA; described in Section 1.1 , Linear morphs; described in Section 3.1, Behaviours; described in Section 2.1 and Phase Portraits described in Section 3.3 of https://atrium.lib.uoguelph.ca/xmlui/handle/10214/21316). These are also defined in the following papers (and are slightly more easy to read): . The following example of what a graph morph is, which is probably the best way to explain it.
 
 # A simple example
 Consider the following score matrices for FBCAs with 4 states. These score matrices were generated via a crisscrossing two interesting 2 state FBCAs.
