@@ -8,7 +8,7 @@ To start, one must be familiar with (FBCA; described in Section 1.1 , Linear mor
 # A simple example
 Consider the following two FBCAs with 2 states:
 sM1:[0.320205, 0.952292, 0.351335, 0.837774] which produces a behaviour: 
-![sM1](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/test/0/0%2020.png
+![sM1](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/test/0/0%2020.png)
 sM2:[[0.390741, 0.728013, 0.614486, 0.378596]
 with 4 states. Given These score matrices were generated via a crisscrossing two interesting 2 state FBCAs.
 sM1:[0.320205, 0.952292, 0.351335, 0.837774, 0.320205, 0.952292, 0.351335, 0.837774, 0.320205, 0.952292, 0.351335, 0.837774, 0.320205, 0.952292, 0.351335, 0.837774] 
