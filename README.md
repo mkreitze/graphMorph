@@ -85,6 +85,23 @@ Given the abusrd number of behaviours seen by the crisscrossing method, this met
 # Dectecting 'behaviourally close' FBCA
 
 To better express the power of classifying 'behavioural distance' consider the following 2 state FBCA. The exact values used in the score matrices are detailed inthe 2dim example textfile.
-_    sM2D1     ___ sM2D2  ___ sM2D3 ___ sM2D4  ___ sM2D5 ___ sM2D6  ___ sM2D7 ___ sM2D8 ___    
 
-![sM2D1](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/0/0%2020.png) ![sM2D2](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/1/1%2020.png) ![sM2D3](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/2/2%2020.png) ![sM2D4](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/3/3%2020.png) ![sM2D5](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/4/4%2020.png)![sM2D6](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/5/5%2020.png) ![sM2D7](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/6/6%2020.png) ![sM2D8](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/7/7%2020.png)
+![1](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/0/0%2020.png) ![2](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/1/1%2020.png) ![3](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/2/2%2020.png) ![4](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/3/3%2020.png) ![5](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/4/4%2020.png)![6](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/5/5%2020.png) ![7](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/6/6%2020.png) ![8](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/7/7%2020.png)
+
+Their resulting planar graphs are (in order):
+
+![1](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/0.png)
+
+![2](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/1.png) 
+
+![3](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/2.png)
+
+![4](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/3.png)
+
+![5](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/4.png)
+
+![6](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/5.png)
+
+![7](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/6.png)
+
+![8](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/7.png) 
