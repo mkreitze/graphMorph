@@ -2,6 +2,12 @@
 # In short 
 Graph morphs are a method to visualize all behaviours attained from a complete graph of linear morphs between multiple Fashion Based Cellular Automata. This is done through visualizing a planar graph with edges being these linear morphs. of every FBCA, represented by a m-sided polgyon, m being the number of members in the morphed set minus 1. This has shown to be a very easy method to describe similar score matrices for FBCA with an arbtirary number of states and, with small edits, should be able to visualize a 'pseudo phase portrait' for FBCAs an arbitrary number of states.  
 
+The following libraries are needed: os, numpy, matplotlib, math and PIL to run this software.
+To generate all linear morphs between an inputted set use FmultiMorph.py
+This code is ran using the command 'python3 FmultiMorph.py'
+To generate planar views of linear morphs for a set (and also record all unique behaviours found by the graph morph) use FgraphMorph.py
+To run and use this software download use the command 'python3  FgraphMorph.p'
+
 # Introduction
 To start, one must be familiar with (FBCA; described in Section 1.1 , Linear morphs; described in Section 3.1, Behaviours; described in Section 2.1 and Phase Portraits described in Section 3.3 of https://atrium.lib.uoguelph.ca/xmlui/handle/10214/21316). These are also defined in the following papers (and are slightly more easy to read): . To better understand what the problem of visualizing the behaviours of FBCAs condsider the following example.
 
@@ -26,7 +32,7 @@ _ sM(1,1,2,2): ___ sM(1,2,2,1): ___ sM(2,2,1,2): ___ sM(2,1,2,1): __ sM(1,2,1,2)
 
 ![sM1122](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/big/9/9%2020.png) ![sM1221](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/big/10/10%2020.png) ![sM2212](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/big/11/11%2020.png) ![sM2112](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/big/12/12%2020.png) ![sM1212](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/big/13/13%2020.png) ![sM2122](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/big/14/14%2020.png) ![sM1222](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/big/15/15%2020.png)
 
-
+While 16 generated score matrices is useful. The number of linear morphs generated is 136, considerably higher than 16. This comes from the completed graph having the number of edges equal to the sum from 0 to i of n, with i being the number of members. 
 
 
 
