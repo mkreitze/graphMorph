@@ -25,18 +25,18 @@ class fPrint:
 morphRes=100 #How many equally spaced score matrices are generated btwn sM1 and sM2
 imageHeight=100 #Height of the generated image 
 genPolyGraph = 1 # 0 is false
-polyGraphRadius = 10; 
+polyGraphRadius = 100; 
 #Defintions for FBCA generation (this is used to generate the 'vertex CAs')
 libFBCAGen.useImages=0 #generate gifs? 
 libFBCAGen.finalImage=0 #generate final level map?
 libFBCAGen.numOfGens=20 #number of generations
 libFBCAGen.random.seed(1) #set to 1 for constant
-libFBCAGen.numOfStates=2 #set correctly
+libFBCAGen.numOfStates=4 #set correctly
 CAMapInit=[];CAMapInit=libFBCAGen.initCA(CAMapInit) #Get L_0
 
 d=[];d=os.getcwd()+"/" #Get directory
-quantiferRead= "big"
-quantifer = "big"
+quantiferRead= "halfBig"
+quantifer = "halfBig"
 
 #Score matrix inits
 crissCrossRecord=open(f"crissCross {quantifer}", "r")
@@ -142,6 +142,7 @@ for n in range(0,len(sMs)-1): # go through each
                         newYs.append(fingy.xSpot*ys[m]/morphRes)
             ax1.scatter(newXs,newYs,c=magma(idx))
     plt.savefig(str(n)+".png")
+    print(f"should have made {n}.png")
 # Save found behaviours in a folder
 libFBCAGen.makeFolder(behaviours)
 
