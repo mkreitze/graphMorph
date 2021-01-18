@@ -34,44 +34,41 @@ _ sM(1,1,2,2): ___ sM(1,2,2,1): ___ sM(2,2,1,2): ___ sM(2,1,2,1): __ sM(1,2,1,2)
 
 While 16 generated score matrices is useful. The number of linear morphs generated is 136, considerably higher than 16. This comes from the completed graph having the number of edges equal to the sum from 0 to i of n, with i being the number of members. 
 
-To better visualize each of the 136 linear morphs, 16 planar graphs are generated. Due to current complications the top nine score matrices and their associated planar graphs are generated below. 
+To better visualize each of the 136 linear morphs, 16 planar graphs are generated. Due to current complications the first 8 score matrices and their associated planar graphs are generated below. 
 ##Each vertex should be named to make the planar graphs easier to visualize. ##
 
 # <div align="center"> sM(2,2,2,2) 
 
 ![sM2222PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/0.png)
 
-<div align="center"> # sM(2,2,2,1): 
+# <div align="center"> sM(2,2,2,1): 
 
 ![sM2221PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/1.png) 
 
-<div align="center"> # sM(2,2,1,1): 
+# <div align="center"> sM(2,2,1,1): 
 
 ![sM2211PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/2.png)
 
-<div align="center"> # sM(2,1,1,1): 
+# <div align="center"> sM(2,1,1,1): 
 
 ![sM2111PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/3.png)
 
-<div align="center"> # sM(1,1,1,1): 
+# <div align="center"> sM(1,1,1,1): 
 
 ![sM1111PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/4.png)
 
-<div align="center"> # sM(1,1,1,2): 
+# <div align="center"> sM(1,1,1,2): 
 
 ![sM1112PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/5.png)
 
-<div align="center"> # sM(1,1,2,1): 
+# <div align="center"> sM(1,1,2,1): 
 
 ![sM1121PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/6.png)
 
-<div align="center"> # sM(1,2,1,1): 
+# <div align="center"> sM(1,2,1,1): 
 
 ![sM1211PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/7.png) 
 
-<div align="center"> # sM(2,1,1,2): 
- 
-![sM2112PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/8.png) 
 
 # Visualizing higher dimension FBCA space
 Previous work with FBCAs revealed that FBCAs can be effectively sorted by their score matrices, provided all other paramters are held constant. Sorting by all possible score matrices is effective as all possible patterns (called behaviours due to patterns having some intrinsic property to them) produced by a FBCA can be recorded. The main issue with this method is the number of dimensions required to visualize the behaviours of FBCAs with more than two states. Since the dimension an FBCA's score matrices is the square of its number of states (_n_ > 1, in N) any method of visualziing all behaviours past the _n_ = 2 state case, (detailed in Section 3.3 here  https://atrium.lib.uoguelph.ca/xmlui/handle/10214/21316) is not easily done. To combat this a new method for visualizing this higher dimensional space is required. 
