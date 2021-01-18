@@ -41,35 +41,35 @@ To better visualize each of the 136 linear morphs, 16 planar graphs are generate
 
 ![sM2222PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/0.png)
 
-# <div align="center"> # sM(2,2,2,1): 
+<div align="center"> # sM(2,2,2,1): 
 
 ![sM2221PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/1.png) 
 
-# <div align="center"> # sM(2,2,1,1): 
+<div align="center"> # sM(2,2,1,1): 
 
 ![sM2211PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/2.png)
 
-# <div align="center"> # sM(2,1,1,1): 
+<div align="center"> # sM(2,1,1,1): 
 
 ![sM2111PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/3.png)
 
-# <div align="center"> # sM(1,1,1,1): 
+<div align="center"> # sM(1,1,1,1): 
 
 ![sM1111PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/4.png)
 
-# <div align="center"> # sM(1,1,1,2): 
+<div align="center"> # sM(1,1,1,2): 
 
 ![sM1112PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/5.png)
 
-# <div align="center"> # sM(1,1,2,1): 
+<div align="center"> # sM(1,1,2,1): 
 
 ![sM1121PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/6.png)
 
-# <div align="center"> # sM(1,2,1,1): 
+<div align="center"> # sM(1,2,1,1): 
 
 ![sM1211PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/7.png) 
 
-# <div align="center"> # sM(2,1,1,2): 
+<div align="center"> # sM(2,1,1,2): 
  
 ![sM2112PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/8.png) 
 
