@@ -37,31 +37,31 @@ While 16 generated score matrices is useful. The number of linear morphs generat
 To better visualize each of the 136 linear morphs, 16 planar graphs are generated. Due to current complications the top nine score matrices and their associated planar graphs are generated below. 
 ##Each vertex should be named to make the planar graphs easier to visualize. ##
 
-_ sM(2,2,2,2) _ 
+<div align="center"> # sM(2,2,2,2) 
 ![sM2222PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/0.png)
 
-_ sM(2,2,2,1): _ 
+<div align="center"> # sM(2,2,2,1): 
 ![sM2221PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/1.png) 
 
-_ sM(2,2,1,1): _
+<div align="center"> # sM(2,2,1,1): 
 ![sM2211PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/2.png)
 
-_ sM(2,1,1,1): _
+<div align="center"> # sM(2,1,1,1): 
 ![sM2111PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/3.png)
 
-_ sM(1,1,1,1): _
+<div align="center"> # sM(1,1,1,1): 
 ![sM1111PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/4.png)
 
-_ sM(1,1,1,2): _
+<div align="center"> # sM(1,1,1,2): 
 ![sM1112PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/5.png)
 
-_ sM(1,1,2,1): _
+<div align="center"> # sM(1,1,2,1): 
 ![sM1121PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/6.png)
 
-_ sM(1,2,1,1): _ 
+<div align="center"> # sM(1,2,1,1): 
 ![sM1211PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/7.png) 
 
- _ sM(2,1,1,2): _ 
+<div align="center"> # sM(2,1,1,2): 
  ![sM2112PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/8.png) 
 
 # Visualizing higher dimension FBCA space
