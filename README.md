@@ -105,3 +105,7 @@ Their resulting planar graphs are (in order):
 ![7](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/6.png)
 
 ![8](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/7.png) 
+
+This tells us that while some of these members are similar in their final image (their L_gs), they are not in the same iso-behavioral grain. Additionally, the planar graph of 6 showcases a considerable number of behaviours. This implies that searching along the linear morphs in these regions would yield large amounts of diversity, possibly helping evolutionary algorthims to find interesting level-maps. While this type of analysis is not needed (due to the existance of phase portraits) it showcases how simple qualitative analysis could be done to better find 'hot regions'. Finally the number of behaviours seen on an edge could be considered how _behaviourally close_ two behaviours are. This represents how many grains you must pass to go from one to the other. The lower the number, the closer they are. 
+
+
