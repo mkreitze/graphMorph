@@ -12,6 +12,7 @@ This code is run using the command 'python3  FgraphMorph.py'
 To start, one must be familiar with (FBCA; described in Section 1.1 , Linear morphs; described in Section 3.1, Behaviours; described in Section 2.1 and Phase Portraits described in Section 3.3 of https://atrium.lib.uoguelph.ca/xmlui/handle/10214/21316). These are also defined in the following papers (and are slightly more easy to read): . To better understand what the problem of visualizing the behaviours of FBCAs condsider the following example.
 
 # A simple example
+
 Consider the following two FBCAs with 2 states which both produce a behaviour that is organized enough to be used in level map generation:
 sM1:[0.320205, 0.952292, 0.351335, 0.837774] : 
 
@@ -70,8 +71,41 @@ To better visualize each of the 136 linear morphs, 16 planar graphs are generate
 ![sM1211PG](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/firstNine/7.png) 
 
 
-# Visualizing higher dimension FBCA space
-Previous work with FBCAs revealed that FBCAs can be effectively sorted by their score matrices, provided all other paramters are held constant. Sorting by all possible score matrices is effective as all possible patterns (called behaviours due to patterns having some intrinsic property to them) produced by a FBCA can be recorded. The main issue with this method is the number of dimensions required to visualize the behaviours of FBCAs with more than two states. Since the dimension an FBCA's score matrices is the square of its number of states (_n_ > 1, in N) any method of visualziing all behaviours past the _n_ = 2 state case, (detailed in Section 3.3 here  https://atrium.lib.uoguelph.ca/xmlui/handle/10214/21316) is not easily done. To combat this a new method for visualizing this higher dimensional space is required. 
+The main issue from using this method from crissCrosses is two fold. First, the visualization is not very useful as the colours give somewhat inconclusive results. This comes from the absurd number of behaviours detected by a crisscross. Infact, when trying to process all 16 points, the computation exits before completion due to computational strain. This leads to a huge number of colours being required to properly (889 different behaviours). Note, the maximal number of behaviours is actually pretty easy to calculate and will quickly be explained here. 
 
-# Polyvision (name changeable)
-While arbitrarily high dimensional dimensional space is difficult to visualize, any 2D convex cross section can be visualzied using a phase portrait. If 2D convex cross sections are smartly chosen, then all behaviours should be recordable. For now we shall ignore the problem of _smartly_ choosing behaviours and instead create a software to visualize these 2D convex cross sections. This is done through Polyvision and uses  
+# An upper bound on behaviours
+Consider an FBCA with n states, whose cells are all connected to m neighbours. As shown in previous work (https://atrium.lib.uoguelph.ca/xmlui/handle/10214/21316), an FBCA will have a different behaviour when the ordered set of inequalities represented by its score matrix rearranges. Therefore the number of behaviours that can exist, is the number of unique arrangements. 
+
+To figure out the number of unique arrangements one must first tabulate the size of the set that must be arranged. Since every cell has m neighbours and each neighbour can have any state 1 to n, but the order of these states does not matter (1,1,1,2 == 2,1,1,1) this problem can be reframed as a 'identical balls in bins' problem. The balls in this case are each neighbour (therefore there are m balls) and the bins are the number of states (therefore there are n bins). Using the generic formula yields (n + m - 1) choose (m) to find cardinality of the rearrangeable set (Note this does NOT give us what those are but using integer partitions does). Now that we have the number of objects that can be arranged, consider that they are arranged with no ties. That is, the set possible score is a totally ordered. We can vary this by.... . Incorporating ties we include ... Therefore we have an upperbound on the number of behaviours in an FBCA with n states and whose cells each have m members. 
+
+# A good sampling set
+
+Given the abusrd number of behaviours seen by the crisscrossing method, this method of generating planar graphs and recording the behaviours should be able to effectively sample most behaviours found in high state FBCA. The reason for this is not known.
+
+# Dectecting 'behaviourally close' FBCA
+
+To better express the power of classifying 'behavioural distance' consider the following 2 state FBCA. The exact values used in the score matrices are detailed inthe 2dim example textfile.
+
+![1](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/0/0%2020.png) ![2](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/1/1%2020.png) ![3](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/2/2%2020.png) ![4](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/3/3%2020.png) ![5](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/4/4%2020.png)![6](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/5/5%2020.png) ![7](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/6/6%2020.png) ![8](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/7/7%2020.png)
+
+Their resulting planar graphs are (in order):
+
+![1](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/0.png)
+
+![2](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/1.png) 
+
+![3](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/2.png)
+
+![4](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/3.png)
+
+![5](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/4.png)
+
+![6](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/5.png)
+
+![7](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/6.png)
+
+![8](https://github.com/mkreitze/graphMorph/blob/master/multipleMorphs/fingerprintMethod/graphMorph/2dim/7.png) 
+
+This tells us that while some of these members are similar in their final image (their L_gs), they are not in the same iso-behavioral grain. Additionally, the planar graph of 6 showcases a considerable number of behaviours. This implies that searching along the linear morphs in these regions would yield large amounts of diversity, possibly helping evolutionary algorthims to find interesting level-maps. While this type of analysis is not needed (due to the existance of phase portraits) it showcases how simple qualitative analysis could be done to better find 'hot regions'. Finally the number of behaviours seen on an edge could be considered how _behaviourally close_ two behaviours are. This represents how many grains you must pass to go from one to the other. The lower the number, the closer they are. 
+
+
